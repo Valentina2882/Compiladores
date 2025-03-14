@@ -61,3 +61,13 @@ Resultado:
 4. echo "a=10; b = 5 + a * 2; c = (b - 3) / 2;" | java -cp ".:$ANTLR_JAR" org.antlr.v4.gui.TestRig MiGramatica programa -tree
 
 (programa (expresion a = (expresion 10)) ; (expresion (expresion b = (expresion 5)) + (expresion (expresion a) * (expresion 2))) ; (expresion (expresion c = (expresion ( (expresion (expresion b) - (expresion 3)) ))) / (expresion 2)) ;)
+
+Preguntas del Cuestionario:
+
+1. b) Como operadores aritméticos específicos
+Porque en ANTLR, los operadores +, -, * y / se definen explicitamente en la gramatica como tokens unicos y son reconocidos como tales en la salida de -tokens.
+
+2. El arbol se construye respetando la jerarquía de operadores, evaluando primero * antes que +, lo que confirma que la opción d) es la correcta.
+
+3. Dado que visualizar los tokens y el arbol ayuda tanto a entender la traducción del codigo, optimizarlo y verificar la gramatica, la opción d) Todas las anteriores es la correcta. 
+
