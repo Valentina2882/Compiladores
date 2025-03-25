@@ -1,8 +1,9 @@
-#No hay cambios extra
+#No hay cambios
 from antlr4 import *
 from MiGramaticaLexer import MiGramaticaLexer
 from MiGramaticaParser import MiGramaticaParser
-from EvalVisitor import EvalVisitor
+from MyListener import MyListener
+from antlr4.tree.Tree import ParseTreeWalker
 
 input_stream = InputStream(input('? '))
 lexer = MiGramaticaLexer(input_stream)
@@ -10,6 +11,5 @@ tokens = CommonTokenStream(lexer)
 parser = MiGramaticaParser(tokens)
 tree = parser.programa()
 
-visitor = EvalVisitor()
-resultado = visitor.visit(tree)
-print("📦 Variables al final:", resultado)
+walker = ParseTreeWalker()
+walker.walk(MyListener(), tree)

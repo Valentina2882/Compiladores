@@ -1,4 +1,4 @@
-#No hay cambios extra
+#No hay cambios
 from antlr4 import *
 from MiGramaticaLexer import MiGramaticaLexer
 from MiGramaticaParser import MiGramaticaParser

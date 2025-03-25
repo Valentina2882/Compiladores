@@ -20,16 +20,14 @@ class EvalVisitor(MiGramaticaVisitor):
         return value
 
     def visitForLoop(self, ctx):
-        #maneja la ejecucion de un bucle FOR
-        
-        #inicializacion del bucle
+        #inicializacion del bucle for
         var = ctx.inicializacion().ID().getText()
         self.variables[var] = self.visit(ctx.inicializacion().expresion())
         
         #evaluacion del bucle
         while self.visit(ctx.condicion()):
             for sentencia in ctx.sentencia():
-                self.visit(sentencia)  #ejecuta el cuerpo del bucle
+                self.visit(sentencia)  # Ejecuta el cuerpo del bucle
             
             #actualizacion de la variable de control del bucle
             update_var = ctx.actualizacion().ID().getText()
@@ -39,7 +37,7 @@ class EvalVisitor(MiGramaticaVisitor):
         print("🔄 Finalizó la ejecución del bucle FOR")
 
     def visitCondicion(self, ctx):
-        #evalua la condición del bucle FOR o de cualquier otra estructura condicional
+        #evalua la condicion del bucle for
         var = ctx.ID().getText()
         value = self.variables.get(var, 0)
         cmp_value = int(ctx.INT().getText())
@@ -56,13 +54,13 @@ class EvalVisitor(MiGramaticaVisitor):
         return False
 
     def visitAddSub(self, ctx):
-        #evalua operaciones de suma y resta
+        #evalaa operaciones de suma y resta
         left = self.visit(ctx.expresion(0))
         right = self.visit(ctx.expresion(1))
         return left + right if ctx.op.text == '+' else left - right
 
     def visitMulDiv(self, ctx):
-        #evalua operaciones de multiplicación y división
+        #evalua operaciones de multiplicacion y division
         left = self.visit(ctx.expresion(0))
         right = self.visit(ctx.expresion(1))
         return left * right if ctx.op.text == '*' else left / right
@@ -72,7 +70,7 @@ class EvalVisitor(MiGramaticaVisitor):
         return int(ctx.getText())
 
     def visitVariable(self, ctx):
-        #obtiene el valor de una variable almacenada en el diccionario
+        #bbtiene el valor de una variable almacenada en el diccionario
         var = ctx.getText()
         if var not in self.variables:
             print(f"⚠️ Variable '{var}' no está inicializada. Se asume 0.")
