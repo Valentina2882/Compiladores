@@ -1,6 +1,9 @@
 load "ventas.csv";
-filter column "id_venta" != 11972;
-filter column "id_cliente" < 113264;
-filter column "precio_total" <= 130813;
-aggregate average column "cantidad";
+filter column "precio_total" <= 142725;
+aggregate count column "precio_total";
+aggregate sum column "precio_total";
+aggregate average column "precio_total";
 print;
+
+//Filtra por precio_total <= 142725 y calcula count, 
+//suma y promedio de ese valor.

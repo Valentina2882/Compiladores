@@ -11,7 +11,7 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\r")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16")
         buf.write(".\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2")
         buf.write("\6\2\20\n\2\r\2\16\2\21\3\3\3\3\3\3\3\3\5\3\30\n\3\3\4")
         buf.write("\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3")
@@ -44,7 +44,7 @@ class CSVFilterParser ( Parser ):
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "AGG_FUNC", 
-                      "OPERATOR", "STRING", "NUMBER", "WS" ]
+                      "OPERATOR", "STRING", "NUMBER", "COMMENT", "WS" ]
 
     RULE_prog = 0
     RULE_stat = 1
@@ -67,7 +67,8 @@ class CSVFilterParser ( Parser ):
     OPERATOR=8
     STRING=9
     NUMBER=10
-    WS=11
+    COMMENT=11
+    WS=12
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)

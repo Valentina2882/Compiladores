@@ -19,4 +19,8 @@ OPERATOR: '>' | '<' | '>=' | '<=' | '==' | '!=' ;
 STRING: '"' (~["\r\n])* '"' ;
 NUMBER: [0-9]+ ('.' [0-9]+)? ;
 
+// Comentarios tipo línea
+COMMENT: '//' ~[\r\n]* -> skip ;
+
+// Espacios en blanco
 WS: [ \t\r\n]+ -> skip ;
