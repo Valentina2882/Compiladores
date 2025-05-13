@@ -29,6 +29,11 @@ class CSVFilterVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CSVFilterParser#condition.
+    def visitCondition(self, ctx:CSVFilterParser.ConditionContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CSVFilterParser#aggregateStat.
     def visitAggregateStat(self, ctx:CSVFilterParser.AggregateStatContext):
         return self.visitChildren(ctx)

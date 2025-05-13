@@ -44,6 +44,15 @@ class CSVFilterListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSVFilterParser#condition.
+    def enterCondition(self, ctx:CSVFilterParser.ConditionContext):
+        pass
+
+    # Exit a parse tree produced by CSVFilterParser#condition.
+    def exitCondition(self, ctx:CSVFilterParser.ConditionContext):
+        pass
+
+
     # Enter a parse tree produced by CSVFilterParser#aggregateStat.
     def enterAggregateStat(self, ctx:CSVFilterParser.AggregateStatContext):
         pass

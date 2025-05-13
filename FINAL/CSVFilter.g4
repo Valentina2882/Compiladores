@@ -10,7 +10,9 @@ stat
     ;
 
 loadStat:   'load' STRING ';' ;
-filterStat: 'filter' 'column' STRING OPERATOR NUMBER ';' ;
+filterStat: 'filter' 'column' STRING OPERATOR NUMBER (('and' | 'or') 'column' STRING OPERATOR NUMBER)* ';' ;
+condition: 'column' STRING OPERATOR NUMBER ;  // Definir una condición simple para cada columna
+
 aggregateStat: 'aggregate' AGG_FUNC 'column' STRING ';' ;
 printStat:  'print' ';' ;
 

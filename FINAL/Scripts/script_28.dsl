@@ -1,6 +1,5 @@
 load "ventas.csv";
-filter column "id_cliente" > 5;
-filter column "precio_total" > 40000;
+filter column "id_cliente" > 5 and column "precio_total" > 40000;
 aggregate average column "precio_total";
 aggregate sum column "precio_total";
 aggregate count column "precio_total";

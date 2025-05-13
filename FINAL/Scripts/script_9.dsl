@@ -1,6 +1,5 @@
 load "ventas.csv";
-filter column "precio_total" >= 10000;
-filter column "precio_total" <= 100000;
+filter column "precio_total" >= 10000 and column "precio_total" <= 100000;
 aggregate sum column "precio_total";
 aggregate average column "precio_total";
 aggregate count column "cantidad";
