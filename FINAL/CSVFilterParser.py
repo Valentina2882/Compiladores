@@ -11,27 +11,25 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20")
-        buf.write("?\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
-        buf.write("\t\b\3\2\6\2\22\n\2\r\2\16\2\23\3\3\3\3\3\3\3\3\5\3\32")
-        buf.write("\n\3\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
-        buf.write("\5\3\5\7\5*\n\5\f\5\16\5-\13\5\3\5\3\5\3\6\3\6\3\6\3\6")
-        buf.write("\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\b\3\b\3\b\3\b\2\2\t\2\4")
-        buf.write("\6\b\n\f\16\2\3\3\2\7\b\2<\2\21\3\2\2\2\4\31\3\2\2\2\6")
-        buf.write("\33\3\2\2\2\b\37\3\2\2\2\n\60\3\2\2\2\f\65\3\2\2\2\16")
-        buf.write(";\3\2\2\2\20\22\5\4\3\2\21\20\3\2\2\2\22\23\3\2\2\2\23")
-        buf.write("\21\3\2\2\2\23\24\3\2\2\2\24\3\3\2\2\2\25\32\5\6\4\2\26")
-        buf.write("\32\5\b\5\2\27\32\5\f\7\2\30\32\5\16\b\2\31\25\3\2\2\2")
-        buf.write("\31\26\3\2\2\2\31\27\3\2\2\2\31\30\3\2\2\2\32\5\3\2\2")
-        buf.write("\2\33\34\7\3\2\2\34\35\7\r\2\2\35\36\7\4\2\2\36\7\3\2")
-        buf.write("\2\2\37 \7\5\2\2 !\7\6\2\2!\"\7\r\2\2\"#\7\f\2\2#+\7\16")
-        buf.write("\2\2$%\t\2\2\2%&\7\6\2\2&\'\7\r\2\2\'(\7\f\2\2(*\7\16")
-        buf.write("\2\2)$\3\2\2\2*-\3\2\2\2+)\3\2\2\2+,\3\2\2\2,.\3\2\2\2")
-        buf.write("-+\3\2\2\2./\7\4\2\2/\t\3\2\2\2\60\61\7\6\2\2\61\62\7")
-        buf.write("\r\2\2\62\63\7\f\2\2\63\64\7\16\2\2\64\13\3\2\2\2\65\66")
-        buf.write("\7\t\2\2\66\67\7\13\2\2\678\7\6\2\289\7\r\2\29:\7\4\2")
-        buf.write("\2:\r\3\2\2\2;<\7\n\2\2<=\7\4\2\2=\17\3\2\2\2\5\23\31")
-        buf.write("+")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
+        buf.write("8\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2")
+        buf.write("\6\2\20\n\2\r\2\16\2\21\3\3\3\3\3\3\3\3\5\3\30\n\3\3\4")
+        buf.write("\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\7")
+        buf.write("\5(\n\5\f\5\16\5+\13\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6")
+        buf.write("\3\7\3\7\3\7\3\7\2\2\b\2\4\6\b\n\f\2\2\2\66\2\17\3\2\2")
+        buf.write("\2\4\27\3\2\2\2\6\31\3\2\2\2\b\35\3\2\2\2\n.\3\2\2\2\f")
+        buf.write("\64\3\2\2\2\16\20\5\4\3\2\17\16\3\2\2\2\20\21\3\2\2\2")
+        buf.write("\21\17\3\2\2\2\21\22\3\2\2\2\22\3\3\2\2\2\23\30\5\6\4")
+        buf.write("\2\24\30\5\b\5\2\25\30\5\n\6\2\26\30\5\f\7\2\27\23\3\2")
+        buf.write("\2\2\27\24\3\2\2\2\27\25\3\2\2\2\27\26\3\2\2\2\30\5\3")
+        buf.write("\2\2\2\31\32\7\3\2\2\32\33\7\13\2\2\33\34\7\17\2\2\34")
+        buf.write("\7\3\2\2\2\35\36\7\4\2\2\36\37\7\7\2\2\37 \7\13\2\2 !")
+        buf.write("\7\n\2\2!)\7\f\2\2\"#\7\t\2\2#$\7\7\2\2$%\7\13\2\2%&\7")
+        buf.write("\n\2\2&(\7\f\2\2\'\"\3\2\2\2(+\3\2\2\2)\'\3\2\2\2)*\3")
+        buf.write("\2\2\2*,\3\2\2\2+)\3\2\2\2,-\7\17\2\2-\t\3\2\2\2./\7\5")
+        buf.write("\2\2/\60\7\b\2\2\60\61\7\7\2\2\61\62\7\13\2\2\62\63\7")
+        buf.write("\17\2\2\63\13\3\2\2\2\64\65\7\6\2\2\65\66\7\17\2\2\66")
+        buf.write("\r\3\2\2\2\5\21\27)")
         return buf.getvalue()
 
 
@@ -45,40 +43,39 @@ class CSVFilterParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'load'", "';'", "'filter'", "'column'", 
-                     "'and'", "'or'", "'aggregate'", "'print'" ]
+    literalNames = [ "<INVALID>", "'load'", "'filter'", "'aggregate'", "'print'", 
+                     "'column'", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "';'" ]
 
-    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "AGG_FUNC", "OPERATOR", "STRING", "NUMBER", 
-                      "COMMENT", "WS" ]
+    symbolicNames = [ "<INVALID>", "LOAD", "FILTER", "AGGREGATE", "PRINT", 
+                      "COLUMN", "AGG_FUNC", "LOGIC_OP", "OPERATOR", "STRING", 
+                      "NUMBER", "COMMENT", "WS", "SEMI" ]
 
     RULE_prog = 0
     RULE_stat = 1
     RULE_loadStat = 2
     RULE_filterStat = 3
-    RULE_condition = 4
-    RULE_aggregateStat = 5
-    RULE_printStat = 6
+    RULE_aggregateStat = 4
+    RULE_printStat = 5
 
-    ruleNames =  [ "prog", "stat", "loadStat", "filterStat", "condition", 
-                   "aggregateStat", "printStat" ]
+    ruleNames =  [ "prog", "stat", "loadStat", "filterStat", "aggregateStat", 
+                   "printStat" ]
 
     EOF = Token.EOF
-    T__0=1
-    T__1=2
-    T__2=3
-    T__3=4
-    T__4=5
-    T__5=6
-    T__6=7
-    T__7=8
-    AGG_FUNC=9
-    OPERATOR=10
-    STRING=11
-    NUMBER=12
-    COMMENT=13
-    WS=14
+    LOAD=1
+    FILTER=2
+    AGGREGATE=3
+    PRINT=4
+    COLUMN=5
+    AGG_FUNC=6
+    LOGIC_OP=7
+    OPERATOR=8
+    STRING=9
+    NUMBER=10
+    COMMENT=11
+    WS=12
+    SEMI=13
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -130,16 +127,16 @@ class CSVFilterParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 15 
+            self.state = 13 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 14
+                self.state = 12
                 self.stat()
-                self.state = 17 
+                self.state = 15 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CSVFilterParser.T__0) | (1 << CSVFilterParser.T__2) | (1 << CSVFilterParser.T__6) | (1 << CSVFilterParser.T__7))) != 0)):
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CSVFilterParser.LOAD) | (1 << CSVFilterParser.FILTER) | (1 << CSVFilterParser.AGGREGATE) | (1 << CSVFilterParser.PRINT))) != 0)):
                     break
 
         except RecognitionException as re:
@@ -199,27 +196,27 @@ class CSVFilterParser ( Parser ):
         localctx = CSVFilterParser.StatContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_stat)
         try:
-            self.state = 23
+            self.state = 21
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [CSVFilterParser.T__0]:
+            if token in [CSVFilterParser.LOAD]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 19
+                self.state = 17
                 self.loadStat()
                 pass
-            elif token in [CSVFilterParser.T__2]:
+            elif token in [CSVFilterParser.FILTER]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 20
+                self.state = 18
                 self.filterStat()
                 pass
-            elif token in [CSVFilterParser.T__6]:
+            elif token in [CSVFilterParser.AGGREGATE]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 21
+                self.state = 19
                 self.aggregateStat()
                 pass
-            elif token in [CSVFilterParser.T__7]:
+            elif token in [CSVFilterParser.PRINT]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 22
+                self.state = 20
                 self.printStat()
                 pass
             else:
@@ -241,8 +238,14 @@ class CSVFilterParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def LOAD(self):
+            return self.getToken(CSVFilterParser.LOAD, 0)
+
         def STRING(self):
             return self.getToken(CSVFilterParser.STRING, 0)
+
+        def SEMI(self):
+            return self.getToken(CSVFilterParser.SEMI, 0)
 
         def getRuleIndex(self):
             return CSVFilterParser.RULE_loadStat
@@ -270,12 +273,12 @@ class CSVFilterParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_loadStat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 25
-            self.match(CSVFilterParser.T__0)
-            self.state = 26
+            self.state = 23
+            self.match(CSVFilterParser.LOAD)
+            self.state = 24
             self.match(CSVFilterParser.STRING)
-            self.state = 27
-            self.match(CSVFilterParser.T__1)
+            self.state = 25
+            self.match(CSVFilterParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -291,6 +294,15 @@ class CSVFilterParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def FILTER(self):
+            return self.getToken(CSVFilterParser.FILTER, 0)
+
+        def COLUMN(self, i:int=None):
+            if i is None:
+                return self.getTokens(CSVFilterParser.COLUMN)
+            else:
+                return self.getToken(CSVFilterParser.COLUMN, i)
 
         def STRING(self, i:int=None):
             if i is None:
@@ -309,6 +321,15 @@ class CSVFilterParser ( Parser ):
                 return self.getTokens(CSVFilterParser.NUMBER)
             else:
                 return self.getToken(CSVFilterParser.NUMBER, i)
+
+        def SEMI(self):
+            return self.getToken(CSVFilterParser.SEMI, 0)
+
+        def LOGIC_OP(self, i:int=None):
+            if i is None:
+                return self.getTokens(CSVFilterParser.LOGIC_OP)
+            else:
+                return self.getToken(CSVFilterParser.LOGIC_OP, i)
 
         def getRuleIndex(self):
             return CSVFilterParser.RULE_filterStat
@@ -337,100 +358,36 @@ class CSVFilterParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
+            self.state = 27
+            self.match(CSVFilterParser.FILTER)
+            self.state = 28
+            self.match(CSVFilterParser.COLUMN)
             self.state = 29
-            self.match(CSVFilterParser.T__2)
-            self.state = 30
-            self.match(CSVFilterParser.T__3)
-            self.state = 31
             self.match(CSVFilterParser.STRING)
-            self.state = 32
+            self.state = 30
             self.match(CSVFilterParser.OPERATOR)
-            self.state = 33
+            self.state = 31
             self.match(CSVFilterParser.NUMBER)
-            self.state = 41
+            self.state = 39
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CSVFilterParser.T__4 or _la==CSVFilterParser.T__5:
+            while _la==CSVFilterParser.LOGIC_OP:
+                self.state = 32
+                self.match(CSVFilterParser.LOGIC_OP)
+                self.state = 33
+                self.match(CSVFilterParser.COLUMN)
                 self.state = 34
-                _la = self._input.LA(1)
-                if not(_la==CSVFilterParser.T__4 or _la==CSVFilterParser.T__5):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 35
-                self.match(CSVFilterParser.T__3)
-                self.state = 36
                 self.match(CSVFilterParser.STRING)
-                self.state = 37
+                self.state = 35
                 self.match(CSVFilterParser.OPERATOR)
-                self.state = 38
+                self.state = 36
                 self.match(CSVFilterParser.NUMBER)
-                self.state = 43
+                self.state = 41
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 44
-            self.match(CSVFilterParser.T__1)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class ConditionContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def STRING(self):
-            return self.getToken(CSVFilterParser.STRING, 0)
-
-        def OPERATOR(self):
-            return self.getToken(CSVFilterParser.OPERATOR, 0)
-
-        def NUMBER(self):
-            return self.getToken(CSVFilterParser.NUMBER, 0)
-
-        def getRuleIndex(self):
-            return CSVFilterParser.RULE_condition
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterCondition" ):
-                listener.enterCondition(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitCondition" ):
-                listener.exitCondition(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCondition" ):
-                return visitor.visitCondition(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def condition(self):
-
-        localctx = CSVFilterParser.ConditionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_condition)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 46
-            self.match(CSVFilterParser.T__3)
-            self.state = 47
-            self.match(CSVFilterParser.STRING)
-            self.state = 48
-            self.match(CSVFilterParser.OPERATOR)
-            self.state = 49
-            self.match(CSVFilterParser.NUMBER)
+            self.state = 42
+            self.match(CSVFilterParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -447,11 +404,20 @@ class CSVFilterParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def AGGREGATE(self):
+            return self.getToken(CSVFilterParser.AGGREGATE, 0)
+
         def AGG_FUNC(self):
             return self.getToken(CSVFilterParser.AGG_FUNC, 0)
 
+        def COLUMN(self):
+            return self.getToken(CSVFilterParser.COLUMN, 0)
+
         def STRING(self):
             return self.getToken(CSVFilterParser.STRING, 0)
+
+        def SEMI(self):
+            return self.getToken(CSVFilterParser.SEMI, 0)
 
         def getRuleIndex(self):
             return CSVFilterParser.RULE_aggregateStat
@@ -476,19 +442,19 @@ class CSVFilterParser ( Parser ):
     def aggregateStat(self):
 
         localctx = CSVFilterParser.AggregateStatContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_aggregateStat)
+        self.enterRule(localctx, 8, self.RULE_aggregateStat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 51
-            self.match(CSVFilterParser.T__6)
-            self.state = 52
+            self.state = 44
+            self.match(CSVFilterParser.AGGREGATE)
+            self.state = 45
             self.match(CSVFilterParser.AGG_FUNC)
-            self.state = 53
-            self.match(CSVFilterParser.T__3)
-            self.state = 54
+            self.state = 46
+            self.match(CSVFilterParser.COLUMN)
+            self.state = 47
             self.match(CSVFilterParser.STRING)
-            self.state = 55
-            self.match(CSVFilterParser.T__1)
+            self.state = 48
+            self.match(CSVFilterParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -505,6 +471,11 @@ class CSVFilterParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def PRINT(self):
+            return self.getToken(CSVFilterParser.PRINT, 0)
+
+        def SEMI(self):
+            return self.getToken(CSVFilterParser.SEMI, 0)
 
         def getRuleIndex(self):
             return CSVFilterParser.RULE_printStat
@@ -529,13 +500,13 @@ class CSVFilterParser ( Parser ):
     def printStat(self):
 
         localctx = CSVFilterParser.PrintStatContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_printStat)
+        self.enterRule(localctx, 10, self.RULE_printStat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 57
-            self.match(CSVFilterParser.T__7)
-            self.state = 58
-            self.match(CSVFilterParser.T__1)
+            self.state = 50
+            self.match(CSVFilterParser.PRINT)
+            self.state = 51
+            self.match(CSVFilterParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
